@@ -1,7 +1,8 @@
 package dam2.jtengo.Practica.Model;
 
 public class Article {
-public int ID_Article;
+	//Encapsulació!!!!!
+public int ID_Article; //Has canviat el nom de l'atribut??
 public String descripcio;
 public double preuCompra;
 public double preuVenda;
@@ -10,7 +11,7 @@ public double preuVenda;
 
 public Article(int iD_Article, String descripcio, double preuCompra, double preuVenda) {
 	
-	ID_Article = iD_Article;
+	ID_Article = iD_Article; //?? Ho mirarem a classe
 	this.descripcio = descripcio;
 	this.preuCompra = preuCompra;
 	this.preuVenda = preuVenda;

@@ -9,10 +9,10 @@ public double total;
 public ArrayList<LineaComanda> liniesComanda;
 
 public Comanda(int numComanda, Client client, double total, ArrayList<LineaComanda> liniesComanda) {
-	NumComanda = numComanda;
+	NumComanda = numComanda;//??
 	this.client = client;
 	this.total = total;
-	this.liniesComanda = liniesComanda;
+	this.liniesComanda = liniesComanda; // Has de crear l'ArrayList
 }
 
 public int getNumComanda() {
@@ -44,13 +44,14 @@ public ArrayList<LineaComanda> getLiniesComanda() {
 }
 
 public void setLiniesComanda(ArrayList<LineaComanda> liniesComanda) {
-	this.liniesComanda = liniesComanda;
+	this.liniesComanda = liniesComanda;	
 }
+//Falten mètodes per a l'Array
 
 @Override
 public String toString() {
 	return "Comanda [NumComanda=" + NumComanda + ", client=" + client + ", total=" + total + ", liniesComanda="
-			+ liniesComanda + "]";
+			+ liniesComanda + "]"; //Fet automàtic sense comprovar.
 }
 public void addComanda(Comanda comanda) {
 	
